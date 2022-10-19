@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css\rentbicycleform.css">
+    <title>RentForm</title>
+</head>
+<body>
+    <header>
+        <h1 id="logo"><b>Logo</b></h1>
+        <nav id="navbar">
+            <a href="about.html" class="aboutlink">About</a>
+            <a href="D:\Bicycle-Fullstack Project\rentbicycle.html" class="rentlink">Rent</a>
+            <a href="D:\Bicycle-Fullstack Project\Buybicycle.html" class="purchaselink">Purchase</a>
+            <a href="login.html" target="_blank"><button type="button" class="loginbtn">Log-in</button></a>
+        </nav>
+    </header> 
+    <hr>
+     
+    <form action="https://formsubmit.co/prajapatikashyap14@gmail.com" method="POST">
+        <table>
+            <tr>
+                <td><label for="name" id="name">Name:</label></td>
+                <td><input type="text" name="name" required></td>
+            </tr>
+            <tr>
+                    <td> <label for="name" id="age">Age</label></td>
+                    <td> <input type="number" name="age" required></td>
+            </tr>
+            <tr>
+                    <td><label for="address" id="address">Address Where <br>You Want:</label></td>
+                    <td><textarea rows="7" name="Address" required></textarea></td>
+            </tr>
+            <tr>
+                     <td> <label for="date" id="date">Date:</label></td>
+                     <td> <input type="date" name="Date" required></td>
+            </tr>
+            <tr>
+                    <td> <label for="time" id="time">Time:</label></td>
+                    <td> <input type="time" name="Time" required></td>
+            </tr>
+        </table>
+    </form>
+    <p id="ruls">*Some condition and ruls apply on rent bicycle so make sure you conform <br>that.while you recive your rent bicycle you must give your identitity card <br>as well as 50% rent fee and must fill the form which our employ give you <br>as hard copy .we make sure that you read and understand company’s polises. *</p>
+    <br>
+    <p id="checkbox"><input type="checkbox">&nbsp;Please Check This You Are confirmm.</p>
+    <br>
+   <a href="D:\Bicycle-Fullstack Project\rentbicycle.html" ><button type="button" class="canselbtn">Cansel</button></a> <button type="submit" class="paybtn" onclick="popupmsg()">Pay</button>
+    
+
+
+   <script type="text/javascript">
+     
+       function popupmsg() {
+           alert("Your Rent Bicycle given you on a time ...")
+       }
+
+   </script>
+</body>
+</html>
